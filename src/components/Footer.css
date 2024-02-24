@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer > * {
+  margin: 10px 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #151719;
+  color: #ffffff;
+  padding: 20px 0;
+  position: static;
+  width: 100%;
+  text-align: center;
+}
+
+.footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  text-align: end;
+  font-size: 1.5rem;
+  margin-left: 5px;
+  color: #7709a3;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.download p {
+  font-size: large;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.Playstore, .Appstore {
+  width: 110px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.footer__links__wrapper {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  display: flex;
+  text-align: center;
+}
+
+.footer__links__wrapper a {
+  margin: 0 10px; 
+}
+
+.footer__social__icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+}
+
+.footer__social__icons a {
+  color: #ffffff; 
+  text-decoration: none;
+}
+
+.footer__social__icons img {
+  width: 24px; 
+  height: 24px; 
+}
+
+p {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+@media (max-width: 600px) {
+  .footer {
+      padding: 10px 0;
+  }
+
+  .footer p {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-left: 0;
+  }
+
+  .download {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .download p {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .Playstore, .Appstore {
+      width: 80px;
+      height: 30px;
+  }
+
+  .footer__links__wrapper {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 0.625rem;
+      padding-top: 0.4375rem;
+      padding-bottom: 0.4375rem;
+  }
+
+  .footer__links__wrapper a {
+      margin: 5px 0;
+  }
+
+  .footer__social__icons {
+      gap: 15px;
+  }
+
+  .footer__social__icons img {
+      width: 18px;
+      height: 18px;
+  }
+}

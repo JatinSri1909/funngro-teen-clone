@@ -1,0 +1,122 @@
+/* src/components/FunBlogs.css */
+:root {
+  --primary-color: #8E24AA;
+  --secondary-color: #4A00E0;
+  --black: #000000;
+  --white: #FFFFFF;
+  --purple: #4A00E0;
+}
+
+.fun-blogs {
+  max-width: none;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--white);
+  width: 100%;
+}
+
+.fun-blogs h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.fun-blogs p {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.fun-blogs .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fun-blogs .card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 0 1rem;
+  flex-basis: calc(33.333% - 2rem);
+  height: 350px;
+}
+
+.fun-blogs .card-with-image .card-img-top {
+  object-fit: cover;
+  height: 150px;
+}
+
+.fun-blogs .card-with-image .card-body {
+  padding: 1rem;
+}
+
+.fun-blogs .card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.fun-blogs .card-with-image .card-body .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.fun-blogs .card-with-image .card-body .card-text {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.fun-blogs .card-with-image .card-body .read-more-text {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.fun-blogs .card-with-image .card-body .read-more-text a {
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .fun-blogs {
+      padding: 1rem;
+  }
+
+  .fun-blogs h2 {
+      font-size: 1.5rem;
+  }
+
+  .fun-blogs p {
+      font-size: 1rem;
+  }
+
+  .fun-blogs .card-container {
+      flex-direction: column;
+  }
+
+  .fun-blogs .card {
+      margin: 1rem 0;
+      flex-basis: 100%;
+  }
+
+  .fun-blogs .card-with-image .card-img-top {
+      height: 100px;
+  }
+
+  .fun-blogs .card-with-image .card-body .card-title {
+      font-size: 1.2rem;
+  }
+
+  .fun-blogs .card-with-image .card-body .card-text,
+  .fun-blogs .card-with-image .card-body .read-more-text {
+      font-size: 1rem;
+  }
+}
