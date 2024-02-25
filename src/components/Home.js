@@ -3,16 +3,16 @@ import './Home.css';
 
 function Home() {
     return (
-        <div class = "home">
-            <div class = "home__container">
+        <div className = "home">
+            <div className = "home__container">
 
-                <div class = "one">
-                    <h1>Earn your <br/>
-                    first income 
+                <div className = "one">
+                    <h1><b>Earn your <br/>
+                    first income </b>
                     </h1>
                 </div>
 
-                <div class = "two">
+                <div className = "two">
                     <p>Real companies, real projects, real earnings and real money
                     <br/><br/>
                     <pre>
@@ -21,20 +21,22 @@ function Home() {
                     </p>
                 </div>
 
-                <div class = "three">
+                <div className = "three">
                     <p>
                         Download App
                     </p>
+                    {/*eslint-disable-next-line */}
                     <a href = "#">
-                        <img src = "https://assets-global.website-files.com/638b48215fd2fd34538fa6bc/638c80746a8a27189ca05fb9_image%2029.png" alt = "appstore" class = "Appstore" />
+                        <img src = "https://assets-global.website-files.com/638b48215fd2fd34538fa6bc/638c80746a8a27189ca05fb9_image%2029.png" alt = "appstore" className = "Appstore" />
                     </a>
+                    {/*eslint-disable-next-line */}
                     <a href = "#">
-                        <img src = "https://assets-global.website-files.com/638b48215fd2fd34538fa6bc/638c80744c238bae49b47ff4_image%2027.png" alt = "googleplay" class ="Playstore"/>
+                        <img src = "https://assets-global.website-files.com/638b48215fd2fd34538fa6bc/638c80744c238bae49b47ff4_image%2027.png" alt = "googleplay" className ="Playstore"/>
                     </a>
                 </div>
 
             </div>
-            <img src = "https://assets-global.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro.png" alt = "earnmoney" class = "Sharktank" />
+            <img src = "https://assets-global.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro.png" alt = "earnmoney" className = "Sharktank" />
         </div>
     )
 }
