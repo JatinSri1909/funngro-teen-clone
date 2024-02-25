@@ -1,9 +1,9 @@
 nav {
     display: flex;
-    background-image: linear-gradient(45deg,rgb(19, 136, 245),rgb(94, 3, 184));
-    padding: 5px 80px;
     justify-content: space-between;
     align-items: center;
+    background-image: linear-gradient(45deg,rgb(19, 136, 245),rgb(94, 3, 184));
+    padding: 5px 80px;
     font-family: Arial, Helvetica, sans-serif;
     height: 80px;
     position: -webkit-sticky;
@@ -12,15 +12,24 @@ nav {
     z-index: 10;
 }
 
-nav h1 {
+.nav-left {
+    flex-grow: 1;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
     color: #cbc7c7;
-    margin-right: 550px;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
+    transition: transform 0.3s ease-in-out;
 }
 
 nav ul li {
@@ -61,26 +70,63 @@ nav ul li button:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 600px) {
+.menu-button {
+    display: none;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: #cbc7c7;
+}
+
+
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
-        padding: 5px 10px;
+        padding: 5px 20px;
     }
 
-    nav h1 {
-        margin-right: 0;
+    .nav-right {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    nav a {
+        margin-bottom: 1em;
     }
 
     nav ul {
-        margin-top: 10px;
+        flex-direction: column;
+        display: none;
+        transform: translateY(-10px);
+    }
+
+    nav ul.show {
+        display: flex;
+        transform: translateY(0);
     }
 
     nav ul li {
         margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 1em;
     }
 
-    nav ul li:last-child {
-        margin-bottom: 0;
+    nav ul li button {
+        display: block;
+        height: 35px;
+        width: 200px;
+        border-radius: 20px;
+        font-size: medium;
+        font-weight: bold;
+        background-color: #ffffffdb;
+        color: #0f0f0e;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border: none;
+        transition: all 0.3s ease;
+        margin-top: -8px;
+    }
+
+    .menu-button {
+        display: block;
     }
 }
