@@ -7,18 +7,28 @@ import pro from '../materials/pro.png';
 
 const StatsBar = () => {
   return (
-    <section className="stats-bar">
-      <div className="stats-container">
+    <div className="stats-bar">
+      <div className="stats-item">
         <img src={comp} alt="" />
-        <p><h1>3000+</h1>Companies</p>
-        <img src={cat} alt="" />
-        <p><h1>12</h1>Categories</p>
-        <img src={Teenlancers} alt="" />
-        <p><h1>14,00,000+</h1>Teenlancers</p>
-        <img src={pro} alt="" />
-        <p><h1>1,000+</h1>Live projects</p>
+        <h1>3000+</h1>
+        <p>Companies</p>
       </div>
-    </section>
+      <div className="stats-item">
+        <img src={cat} alt="" />
+        <h1>12</h1>
+        <p>Categories</p>
+      </div>
+      <div className="stats-item">
+        <img src={Teenlancers} alt="" />
+        <h1>14,00,000+</h1>
+        <p>Teenlancers</p>
+      </div>
+      <div className="stats-item">
+        <img src={pro} alt="" />
+        <h1>1,000+</h1>
+        <p>Live projects</p>
+      </div>
+    </div>
   );
 };
 
