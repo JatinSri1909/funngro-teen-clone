@@ -108,7 +108,8 @@ nav ul li button:hover {
 
     nav ul li {
         margin-right: 0;
-        margin-bottom: 1em;
+        margin-bottom: 20px;
+        color: #00ffd9;
     }
 
     nav ul li button {
