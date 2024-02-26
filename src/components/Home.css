@@ -67,11 +67,20 @@
 
 @media (min-width: 769px) and (max-width: 1300px) {
     .Sharktank {
-        width: 70%;  /* adjust this value as needed */
+        margin-top: 43;
+        width: 60%;  /* adjust this value as needed */
         justify-content: center;
         align-items: center;
         vertical-align: middle;
     }
+
+    .home__container {
+        margin-top: 100px;
+        margin-left: 43px;
+        margin-right: -82px;
+    }
+    
+    
 }
 
 @media (max-width: 768px) {
