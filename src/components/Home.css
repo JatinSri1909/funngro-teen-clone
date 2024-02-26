@@ -5,6 +5,7 @@
     display: flex;
     padding-bottom: 50px;
     width: 100%;
+    overflow: hidden;
 }
 
 .home__container {
@@ -61,6 +62,16 @@
 .Sharktank {
     margin-top: 15px;
     margin-left: 65px;
+    overflow: hidden;
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    .Sharktank {
+        width: 70%;  /* adjust this value as needed */
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
 }
 
 @media (max-width: 768px) {
